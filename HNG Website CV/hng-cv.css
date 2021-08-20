@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-seri;
+}
+.wrapper{
+    display: flex;
+    /* min-height: 115vh;  */
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    list-style: none;
+}
+
+h4{
+    font-size: 1em;
+    text-transform: uppercase;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    letter-spacing: 3px;
+}
+
+/* LEFT COLUMN */
+.left-side{
+    position: relative;
+    padding-top: 2em; 
+    padding-left: 3em;
+    padding-right: 2em;
+    background-color:rgb(228, 199, 209);
+    color:#05073c;
+}
+.headshot{
+    border-radius: 50%;
+    position: relative;
+    left: 25%;
+}
+.contact i{
+    margin-bottom: 1em;
+}
+.left-side h4{
+    text-align: center;
+}
+.left-side h4::before,
+.left-side h4::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width:100px ;
+    background-color: #05073c;
+}
+.left-side h4::before{
+    left: 0;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%
+}
+.left-side h4::after {
+    right: 0;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%
+}
+.interests li{
+    list-style-type: disc;
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+/* RIGHT COLUMN */
+.right-side{
+    background-color:lavenderblush;
+    color:#05073c;
+    padding-left: 3em;
+    padding-top: 2em;
+    padding-right: 3em;
+    position: relative;
+}
+.name h2{
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+.right-side h4, .skills-and-clubs h4{
+    background-color: rgb(228, 199, 209);
+}
+.summary p{
+    text-align: justify;
+}
+.work h5{
+    font-size: 1em;
+    letter-spacing: 2px;
+}
+.work small{
+    font-style: italic;
+}
+.work p{
+    margin-top: 1em;
+}
+.work div ul{
+    list-style-type: disc;
+    padding-left: 1em;
+    text-align: justify;
+    /* margin-bottom: 2em; */
+}
+.work div:not(:nth-child(4)){
+    margin-bottom: 2em;
+}
+.skills-and-clubs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.skills ul, .clubs ul, .strength ul{
+    list-style-type: disc;
+    padding-left: 1em;
+    padding-right: 4em;
+}
+.skills li, .clubs li, .strength li{
+    margin-top: 1em;
+}
+.skills-and-rates {
+    display: flex;
+} 
+.rates li{
+    list-style-type: none;
+    padding-bottom: .7em;
+}
+.closed{
+    height: 12px;
+    width: 12px;
+    background-color: #05073c;
+    border-radius: 50%;
+    margin-top: .7em;
+    margin-left: 1em;
+   
+}
+.open{
+    height: 12px;
+    width: 12px;
+    background-color: rgb(221, 186, 198);
+    border-radius: 50%;
+    margin-top: .7em;
+    margin-left: 1em;
+}
+/* .clubs li{
+    margin-top: 1.5em;
+} */
+
+
+/*FOOTER*/
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3em 0;
+    color: #05073c;
+}
+.footer p{
+    padding-top: 4em;
+    padding-right: 1em;
+    font-style: italic;
+    font-size: larger;
+}
+.footer img{
+    margin-right: 4em;
+}
+.i4g{
+    padding-top: 3em ;
+}
+
+.temp{
+    display: none
+}
+
+@media screen and (max-width:900px){
+    .left-side{
+        display: none
+    }
+
+    .temp {
+        display: block
+    }
+}
